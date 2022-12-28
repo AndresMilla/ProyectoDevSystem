@@ -1,0 +1,66 @@
+﻿@model ProyectoDevSystem.Models.PREGUNTA
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PREGUNTA</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.pregunta1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pregunta1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pregunta2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pregunta2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pregunta3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pregunta3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pregunta4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pregunta4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pregunta5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pregunta5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ENCUESTA.NombreEncuesta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ENCUESTA.NombreEncuesta)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdPreguntas }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

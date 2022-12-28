@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Prueba DevSystems</h1>
+    <p class="lead">Proyecto Encuestas</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Encuesta","Index","ENCUESTAs")</h2>
+        <p>
+            Crea las encuestas que utilizaran tus clientes.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Pregunta", "Index", "PREGUNTAs")</h2>
+        <p>Inserta las preguntas que quieren que respondan en tus encuestas.</p>
+    </div>
+</div>
